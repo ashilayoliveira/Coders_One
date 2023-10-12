@@ -1,0 +1,58 @@
+javascript
+var nome_do_carro = "Fusca";
+console.log(nome_do_carro);
+
+var nome_do_user = prompt ("Por favor, nos diga qual é o seu nome ?")
+alert("Seja bem vindo, " + nome_do_user + "!");
+
+var idade_do_user = prompt ("Agora por favor, qual é a sua idade ?")
+alert("Olá" + nome_do_user + nome_do_user + ".");
+
+function CalculoRet() {
+    var base = parseFloat(prompt("Informe a base do retângulo: "));
+    var altura = parseFloat(prompt("Informe a altura do retângulo: "));
+    var area = base * altura;
+    alert("A área do retângulo é: " + area);
+}
+
+function calculorAQuad() {
+    var lado = parseFloat(prompt("Informe o lado do quadrado: "));
+    var area = Math.pow(lado, 2);
+    alert("A área do quadrado é: " + area);
+} 
+ 
+function calculoALos() {
+    var diagonalMaior = parseFloat(prompt("Informe a diagonal maior do losango: "));
+    var diagonalMenor = parseFloat(prompt("Informe a diagonal menor do losango: "));
+    var area = (diagonalMaior * diagonalMenor) / 2;
+    alert("A área do losango é: " + area);
+}
+
+function calculoATra() {
+    var baseMaior = parseFloat(prompt("Informe a base maior do trapézio: "));
+    var baseMenor = parseFloat(prompt("Informe a base menor do trapézio: "));
+    var altura = parseFloat(prompt("Informe a altura do trapézio: "));
+    var area = ((baseMaior + baseMenor) * altura) / 2;
+    alert("A área do trapézio é: " + area);
+}
+ 
+function calculoAPar() {
+    var base = parseFloat(prompt("Informe a base do paralelogramo: "));
+    var altura = parseFloat(prompt("Informe a altura do paralelogramo: "));
+    var area = base * altura;
+    alert ("A área do paralelogramo é: " + area);
+}
+
+function calculorATri() {
+    var base = parseFloat(prompt("Informe a base do triângulo: "));
+    var altura = parseFloat(prompt("Informe a altura do triângulo: "));
+    var area = (base * altura) / 2;
+    alert("A área do triângulo é: " + area);
+}
+
+function calculorACir() {
+    var raio = parseFloat(prompt("Informe o raio do círculo: "));
+    var area = Math.PI * Math.pow(raio, 2);
+    alert("A área do círculo é: " + area);
+}
+
